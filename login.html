@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/css1.css">
+
+
+  <script type="text/javascript" src="js/loginjs.js">
+
+  </script>
+
+</head>
+
+<body  onload="load()">
+
+  <header class="header">
+    <a href="login.html" class="logo"><img src="img/Hyundai-logo.png" height="50px" width="150px" alt="Hyundai"></a>
+    <nav class="nav-items">
+      <a href="login.html">Home</a>
+      <a href="login.html">Test Drive</a>
+      <a href="login.html">About</a>
+      <a href= "login.html">Contact</a>
+      <a href="login.html"><input type="button" value="Sign-in" style="background-color:rgb(225, 71, 71); border-color:rgb(255, 0, 0); color:white"></a>
+
+      
+    </nav>
+  </header><center>
+
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">Sign-in</div>
+    </div>
+  <div class="form-container" id="outer">
+		
+    <div class="form-inner" id="login">
+    <form method="POST" action="login.jsp">
+      <div class="field">
+        <input type="email"  name="email" placeholder="Email" required/>
+      </div>
+      <div class="field">
+        <input type="password"  name="password" placeholder="Password" required/>
+      </div>
+      
+      <div class="field btn">
+        <div class="btn-layer"></div>
+        <input type="submit" value="Sign-in">
+      </div>
+
+      <div class="field btn">
+        <div class="btn-layer"></div>
+        <input type="submit" value="Register" onclick="register()">
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="title-text"> </div> 
+  <div class="form-container" id="register">
+    <div class="form-inner" id="login">
+				
+    <form method="POST" action="store1.jsp">
+      <div class="field">
+        <input type="text"  Name=name placeholder="Name" required>
+      </div>
+      <div class="field">
+        <input type="email" name="email" id="email" value=""placeholder="Email ID">
+        </div>
+        <div class="field">
+          <input type="number" name="mob" id="mob" value=""placeholder="Mobile No.">
+        </div>
+        <div class="field">
+          <input type="password" name="password" id="password" value=""placeholder="Password">
+        </div>
+        <div class="field">
+          <input type="text" name="address" value=""placeholder="Address">
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit"value="Login" onclick="login()">
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Submit">
+        </div>     
+    </form>
+</div>
+</div>
+</div>
+
+
+  <footer class="footer">
+    <a href="login.html" class="logo"><img src="img/Hyundai-logo.png" height="50px" width="150px" alt="Hyundai"></a>
+    <div class="copy">&copy; 2022 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="login.html">Home</a>
+        <a href="login.html">About</a>
+        <a href="login.html">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="login.html"><i class="fab fa-facebook"></i></a>
+        <a href="login.html"><i class="fab fa-twitter"></i></a>
+        <a href="login.html"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

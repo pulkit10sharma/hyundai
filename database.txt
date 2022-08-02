@@ -1,0 +1,44 @@
+ysql> use glauniversity;
+Database changed
+mysql> show tables;
++-------------------------+
+| Tables_in_glauniversity |
++-------------------------+
+| login_details           |
+| login_details1          |
+| login_details2          |
++-------------------------+
+3 rows in set (0.05 sec)
+
+mysql> drop table login_details2;
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> drop table login_details1;
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> drop table login_details;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table register(name varchar(30), email varchar(30) unique, mobile varchar(10) unique, pass varchar(30),address varchar(30));
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> desc register;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(30) | YES  |     | NULL    |       |
+| email   | varchar(30) | YES  | UNI | NULL    |       |
+| mobile  | varchar(10) | YES  | UNI | NULL    |       |
+| pass    | varchar(30) | YES  |     | NULL    |       |
+| address | varchar(30) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+mysql> select * from register;
++--------+-------------+------------+-------+---------+
+| name   | email       | mobile     | pass  | address |
++--------+-------------+------------+-------+---------+
+| Pulkit | a@gmail.com | 8476898092 | 12345 | Aligarh |
+| Pulkit | b@gmail.com | 8476898093 | 12345 | Aligarh |
+| Pulkit | c@gmail.com | 8476898094 | 12345 | Aligarh |
++--------+-------------+------------+-------+---------+

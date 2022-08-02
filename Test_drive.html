@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Drive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/css1.css">
+  <script href="js/testdrive.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/Hyundai-logo.png" height="50px" width="150px" alt="Hyundai"></a>
+        <nav class="nav-items" align="right">
+          <a href="home.html">Home</a>
+          <a href="Test_drive.html">Test Drive</a>
+          <a href="About.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="lastpage.jsp"><input type="button" value="Log-out" style="background-color:rgb(225, 71, 71); border-color:rgb(255, 0, 0); color:white"></a>
+        </nav>
+      </header>
+      <center>
+        <div class="wrapper">
+            <div class="title-text">
+              <div class="title login">Apply for a free test drive</div>
+            </div>
+            <div class="form-container">
+              <div class="form-inner">
+                <form method ="POST" action="Login_database.jsp">
+                  <div class="field">
+                    <input type="text"  Name=name placeholder="Name" required>
+                  </div>
+                  <div class="field">
+                    <input type="Email" Name=email placeholder="Email" required>
+                  </div>
+				  <div class="field">
+                    <input type="text" Name=mob_num placeholder="Mobile Number" required>
+                  </div>
+				  <div class="field">
+                    <input type="text" Name=gender placeholder="Gender" required>
+                  </div>
+				  <div class="field">
+                    <input type="text" Name=dl placeholder="Driving Licence" required>
+                  </div>
+				  <div class="field">
+                    <input type="text" Name=city placeholder="City" required>
+                  </div>
+                    <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Apply">
+                  </div>
+                  </form>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </center>
+
+  <footer class="footer">
+    <div class="copy">&copy; 2022 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
